@@ -3647,7 +3647,7 @@ Here is what a graph database might look like for the above query assuming we st
 
 The query would start at the root.
 When it saw the join it would detect a union.
-The union would be resolved by looking at the *first* element of the *ident in the database* (in this case `:place` from `[:place 3]`).
+The union would be resolved by looking at the *first* element of the *ident in the database* (in this case `:place/id` from `[:place/id 3]`).
 That keyword would then be used to select the *query* from the subcomponent union (in this example, `(comp/get-query Place)`).
 
 Processing of the query then continues as normal as if the join was just on `Place`.
